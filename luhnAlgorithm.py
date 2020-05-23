@@ -42,7 +42,7 @@ def checker(number):
             total = total + addedDigits             #total increases by the addedDigits
             
     strTotal = str(total)               #total changed to a string and last digit taken
-    finalNumber = strTotal[-1]
+    finalNumber = str(10 -int(strTotal[-1]))
     
     if finalNumber == checkerNumber:            #If checker and finalNumber == its a credit card if not ints not a credit card number   
         print(number, "is a real Credit Card number")
